@@ -15,7 +15,7 @@
 		
 		public function index()
 		{
-			$this->load->view('beranda_v');
+			$this->load->view('header_v');
 		}
 		
 		public function update()

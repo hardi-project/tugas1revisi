@@ -39,7 +39,7 @@
 					$this->pengguna_m->set_telp($this->input->post('telp'));
 					$this->pengguna_m->insert();
 
-					redirect(site_url().'sign_in');
+					redirect(site_url().'sign_in/index/registrasi_berhasil');
 				}
 			}
 		}

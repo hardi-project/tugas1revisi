@@ -1,6 +1,16 @@
-<?PHP
-	$this->load->view('header_v');
-?>
+<html>
+	<head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="<?PHP echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="<?PHP echo base_url(); ?>assets/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+			.navbar, .jumbotron, .well
+			{
+				margin: 0;
+			}
+        </style>
+    </head>
+<html>
 
 <div class="container">
 
@@ -67,6 +77,11 @@
     </div>
 </div>
 
-<?PHP
+<!-- <?PHP
 	$this->load->view('footer_v');
-?>
+?> -->
+
+<script src="<?PHP echo base_url(); ?>assets/js/jquery-2.1.1.min.js"></script>
+<script src="<?PHP echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script src="<?PHP echo base_url(); ?>assets/js/jquery.dataTables.min.js"></script>
+<script src="<?PHP echo base_url(); ?>assets/js/plugins/ckeditor/ckeditor.js"></script>

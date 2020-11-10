@@ -121,6 +121,8 @@
 
 <!-- JS -->
 
+
+<script src="<?PHP echo base_url(); ?>assets/js/jquery-2.1.1.min.js"></script>
 <script src="<?PHP echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?PHP echo base_url(); ?>assets/js/jquery.dataTables.min.js"></script>
 <script src="<?PHP echo base_url(); ?>assets/js/plugins/ckeditor/ckeditor.js"></script>

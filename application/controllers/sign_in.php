@@ -11,20 +11,20 @@
 		}
 
 		public function index()
-		{
-			$this->load->view('sign_in_v');
-		}
+		{$data['tbl_user'] = $this->db->query
+	("select * from tbl_user")->result();
 
+
+			$this->load->view('sign_in_v',$data);
+		}
 		public function login()
 		{
 
 			if($this->pengguna_m->set_password($this->input->post('password'))!= $this->pengguna_m->set_password($this->input->post('password')))
 			redirect(site_url().'sign_in/index/error_password');
 
-
 			$this->pengguna_m->set_username($this->input->post('username'));
 			$this->pengguna_m->set_password($this->input->post('password'));
-
 
 			$query = $this->pengguna_m->view_by_username_password();
 
@@ -33,17 +33,17 @@
 				$row = $query->row();
 
 				$this->session->set_userdata('username', $row->username);
-				$this->session->set_userdata('status', $row->status);
+				
+				redirect(site_url().'beranda');
 
-				redirect(site_url());
 			}
+
 			else
-				redirect(site_url().'sign_in');
+				redirect(site_url().'sign_in/index/error_password');
 		}
-
-
 		public function logout()
 		{
+
 			$this->session->unset_userdata('username');
 
 			$this->session->sess_destroy();

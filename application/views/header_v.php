@@ -15,67 +15,32 @@
     <body>
 
 
-        <div class="jumbotron">
+        <!-- <div class="jumbotron">
         	<div class="container">
 				<h1>		<img src="<?PHP echo base_url(); ?>assets/img/images.png"> Nyumbang.com
 
 
 
             </div>
-        </div>
-				<nav class="navbar navbar-inverse" role="navigation">
+        </div> -->
+				
 							<div class="container">
-
-										<div class="collapse navbar-collapse" id="menu">
+							<br><br><br>
+<p>anda berhasil login</p>
+										<!-- <div class="collapse navbar-collapse" id="menu">
 											<ul class="nav navbar-nav">
 													<li <?PHP if($this->uri->segment(1) == '') echo ' class="active"'; ?>>
 															<a href="<?PHP echo site_url(); ?>beranda">
 																Beranda
 																</a>
 														</li>
-														<!-- <li <?PHP if($this->uri->segment(1) == 'vid') echo ' class="active"'; ?>>
-															<a href="<?PHP echo site_url(); ?>vid">
-																Cerpen Sedekah
-																</a>
-														</li>
-
-
-		<li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#"	>Ziswaf
-      <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-
-
-
-														<li <?PHP if($this->uri->segment(1) == 'zakat') echo ' class="active"'; ?>>
-															<a href="<?PHP echo site_url(); ?>zakat">
-																Zakat Fitrah
-																</a>
-														</li>
-
-														<li <?PHP if($this->uri->segment(1) == 'zakat_2') echo ' class="active"'; ?>>
-															<a href="<?PHP echo site_url(); ?>zakat_2">
-																Zakat Mal
-																</a>
-														</li>
-
-													<li <?PHP if($this->uri->segment(1) == 'infaq') echo ' class="active"'; ?>>
-														<a href="<?PHP echo site_url(); ?>infaq">
-															Infaq
-															</a>
-													</li>
-
-												<li <?PHP if($this->uri->segment(1) == 'sedekah') echo ' class="active"'; ?>>
-													<a href="<?PHP echo site_url(); ?>sedekah">
-														Sodaqoh
-														</a>
-												</li> -->
+													
 
 </li>
-</ul>
-
+</ul> -->
+<!-- 
 												</ul>
-											<ul class="nav navbar-nav navbar-right">
+											<ul class="nav navbar-nav navbar-right"> -->
 
 								<?PHP
 															if($this->session->userdata('username') == "")
@@ -83,7 +48,7 @@
 								?>
 
 														<li>
-															<a href="<?php echo site_url();?>sign_in/login">
+															<a href="<?php echo site_url();?>sign_in">
 																	<i class="glyphicon glyphicon-log-in"></i> Sign In
 																</a>
 														</li>
@@ -112,7 +77,7 @@
 														<?PHP
 															}
 								?>
-												</ul>
+												<!-- </ul> -->
 										</div>
 								</div>
-						</nav>
+						

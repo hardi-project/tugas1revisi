@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = 'beranda';
+$route['default_controller'] = 'sign_in';
 $route['404_override'] = '';
 
 
